@@ -1,0 +1,9 @@
+<h1>Customer List View 1</h1>
+
+<input ng-model="search" placeholder="search customer here">
+
+<ul ng-repeat="customer in customers | filter : search">
+    <li>{{ customer.name }}, {{ customer.city }}</li>
+</ul>
+
+<a href="#/view2">View 2</a>
